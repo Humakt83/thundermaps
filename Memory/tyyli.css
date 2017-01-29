@@ -1,0 +1,59 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../Table.jpg);
+}
+div.pelialue{
+	margin-left: auto;
+	margin-right: auto;
+}
+table.vaikeustaso{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+td.vaikeus{
+	border-width: thin;
+	border-style: outset;
+	border-color: grey;
+	heigth: 45px;
+	padding: 0%;
+	margin-top: 0;
+	margin-bottom: 0;
+}	
+img.vaikea{
+	border-style: solid;
+	border-color: black;
+	
+}
+div.klik, div.piste{
+	background-color: #FFFFBB;
+	width: 385px;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgb(0, 0, 0);
+	font-size: 200%;
+	font-weight: 600;
+	border-color: black;
+	border-style: solid;
+	border-width: thick;
+}
+table.linkit{
+	width: 650px;
+	border-width: 1px;
+	border-collapse: separate;
+	border-style: ridge;
+	background-image: url(../taustavari.jpg);
+	margin-left: auto;
+	margin-right: auto;
+}
+td {
+	text-align: center;
+}
+td.raja{
+	border-style: groove;
+}
+table.linkki { margin-left: auto; margin-right: auto }
+a { color: black;}
+a:hover { color: black;}
+a:visited{ color: black;}

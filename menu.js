@@ -1,0 +1,10 @@
+var menutable = "<table width='650' frame='box' border='1' rules='none' background='taustavari.jpg'>";
+menutable += "<tr>";;
+menutable += "<td align='center'><a href='index.html'><b>MAIN</b></a></td>";
+menutable += "<td align='center'><b><a href='Heroes3.html'>H3 MAPS</a></b></td>";
+menutable += "<td align='center'><b><a href='Heroes4.html'>H4 MAPS</a></b></td>";
+menutable += "<td align='center'><b><a href='Heroes5.html'>H5 MAPS</a></b></td>";
+menutable += "<td align='center'><b><a href='Memory/muistipeli.html'>PAIRS</a></b></td>";
+menutable += "<td align='center'><b><a href='links.html'>LINKS</a></b></td>";
+menutable += "</tr></table>";
+document.write(menutable);

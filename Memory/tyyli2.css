@@ -1,0 +1,106 @@
+body {
+	margin-left: auto;
+	margin-right: auto;
+	background-image: url(../Table.jpg);
+}
+div.pelialue{
+	margin-left: auto;
+	margin-right: auto;
+}
+table.tarkka{
+	margin-left: auto;
+	margin-right: auto;
+}
+table.vaikeustaso{
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+table.pelaajat{
+	margin-left: auto;
+	margin-right: auto;
+}
+td.vaikeus{
+	border-width: thin;
+	border-style: outset;
+	border-color: grey;
+	heigth: 45px;
+	padding: 0%;
+	margin-top: 0;
+	margin-bottom: 0;
+}	
+img.vaikea{
+	border-style: solid;
+	border-color: black;
+}
+div.vuoro{
+	background-color: #FFFFBB;
+	width: 385px;
+	margin-left: auto;
+	margin-right: auto;
+	color: rgb(0, 0, 0);
+	font-size: 200%;
+	font-weight: 600;
+	border-color: black;
+	border-style: solid;
+	border-width: thick;
+}
+td.pelaajat{
+	color: rgb(255,255,255);;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: black;
+	border-style: solid;
+	border-width: thin;
+	font-size: 120%;
+	font-weight: 600;
+	padding: 1%;
+	width: 100px;
+	background-color: rgb(0,0,0);
+}
+td.pelaaja1, td.pelaaja2, td.pelaaja3, td.pelaaja4{
+	color: rgb(0,0,0);;
+	margin-left: auto;
+	margin-right: auto;
+	border-color: black;
+	border-style: solid;
+	font-size: 120%;
+	font-weight: 600;
+	padding: 1%;
+	width: 100px;
+}
+td.pelaaja1{
+	background-color: #FFFFBB;
+}
+td.pelaaja2{
+	background-color: #FFFFBB;
+}
+td.pelaaja3{
+	background-color: #FFFFBB;
+}
+td.pelaaja4{
+	background-color: #FFFFBB;
+}
+table.nimet{
+	margin-left:auto;
+	margin-right:auto;
+}
+table.linkit{
+	width: 650px;
+	border-width: 1px;
+	border-collapse: separate;
+	border-style: outset;
+	background-image: url(../taustavari.jpg);
+	margin-left: auto;
+	margin-right: auto;
+}
+td.raja{
+	border-style: ridge;
+}
+td {
+	text-align: center;
+}
+table.linkki { margin-left: auto; margin-right: auto }
+a { color: black;}
+a:hover { color: black;}
+a:visited{ color: black;}
