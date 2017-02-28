@@ -1,8 +1,11 @@
 <nav>
-    <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Home</a>
-    <a [routerLink]=" ['./heroes3'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">Heroes3</a>
+    <a [routerLink]=" ['./home'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">HOME</a>
+    <a [routerLink]=" ['./heroes3'] " routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">HEROES3</a>
 </nav>
 
-<main>
+<div class="content">
+    <div class="logo">
+        <img src="assets/images/logo.jpg">
+    </div>
     <router-outlet></router-outlet>
-</main>
+</div>

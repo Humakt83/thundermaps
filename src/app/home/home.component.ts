@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { quotes } from './quotes';
 
 @Component({
     selector: 'home',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+    quote: string = this.pickRandomQuote();
+
+    private pickRandomQuote(): string {
+        return quotes[Math.floor(Math.random() * quotes.length)];
+    }    
 }
