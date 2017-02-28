@@ -1,0 +1,48 @@
+{
+  "name": "thundermaps",
+  "version": "1.0.0",
+  "description": "Heroes of Might & Magic maps site",
+  "scripts": {
+    "start": "gulp serve"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.8",
+    "@angular/compiler": "^2.4.8",
+    "@angular/core": "^2.4.8",
+    "@angular/forms": "^2.4.8",
+    "@angular/http": "^2.4.8",
+    "@angular/platform-browser": "^2.4.8",
+    "@angular/platform-browser-dynamic": "^2.4.8",
+    "@angular/router": "^3.4.8",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.2.0",
+    "systemjs": "^0.20.9",
+    "zone.js": "^0.7.7"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.4.1",
+    "gulp-typescript": "^3.1.5",
+    "typescript": "^2.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Humakt83/thundermaps.git"
+  },
+  "keywords": [
+    "homm",
+    "maps"
+  ],
+  "author": "Humakt83",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Humakt83/thundermaps/issues"
+  },
+  "homepage": "https://github.com/Humakt83/thundermaps#readme"
+}
