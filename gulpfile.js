@@ -21,9 +21,8 @@ gulp.task('copy:libs', ['clean'], function() {
     return gulp.src([
         'node_modules/systemjs/dist/system.src.js',
         'node_modules/reflect-metadata/Reflect.js',
-        'node_modules/zone.js/dist/zone.js',
+        'node_modules/zone.js/dist/zone.min.js',
         'node_modules/core-js/client/shim.min.js',
-        'node_modules/ng2-translate/bundles/ng2-translate.umd.js',
         'node_modules/@angular/common/bundles/common.umd.js',
         'node_modules/@angular/compiler/bundles/compiler.umd.js',
         'node_modules/@angular/core/bundles/core.umd.js',
