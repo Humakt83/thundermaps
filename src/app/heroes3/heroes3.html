@@ -1,1 +1,7 @@
-Heroes3
+<div class="map" *ngFor="let map of maps">
+    <div class="minimap" *ngFor="let minimap of map.minimaps">
+        <img [src]="'assets/images/heroes3/' + minimap + '.jpg'">
+    </div>
+    <div class="title">{{map.name}}</div>
+    <div class="year">{{map.year}}</div>
+</div>

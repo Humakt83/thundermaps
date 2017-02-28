@@ -7,11 +7,13 @@ import { ThundermapsComponent } from './thundermaps.component'
 import { ROUTES } from './thundermaps.routes';
 import { Heroes3Component } from './heroes3/heroes3.component';
 import { HomeComponent } from './home/home.component';
+import { Heroes3MapService } from './heroes3/heroes3map.service';
+import 'rxjs/Rx';
 
 @NgModule({
     declarations: [ThundermapsComponent, Heroes3Component, HomeComponent],
     imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true })],
     bootstrap: [ThundermapsComponent],
-    providers: [HttpModule]
+    providers: [HttpModule, Heroes3MapService]
 })
 export class ThundermapsModule {}

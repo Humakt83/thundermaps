@@ -1,0 +1,91 @@
+[
+    {
+        "name": "Arganthia",
+        "minimaps": ["Arganthia", "ArganthiaUG"],
+        "photos": ["ArganthiaPhoto", "ArganthiaUGPhoto"],
+        "file": "Arganthia.zip",
+        "size": "XL",
+        "year": "2001"
+    },
+    {
+        "name": "Challenge!!!",
+        "minimaps": ["Challenge", "ChallengeUG"],
+        "photos": ["ChallengePhoto", "ChallengeUGPhoto"],
+        "file": "Challenge!!!.zip",
+        "size": "S",
+        "year": "2000"
+    },
+    {
+        "name": "Circle",
+        "minimaps": ["Circle", "CircleUG"],
+        "photos": ["CirclePhoto", "CircleUGPhoto"],
+        "file": "Circle",
+        "size": "M",
+        "year": "2000"
+    },
+    {
+        "name": "Goranth",
+        "minimaps": ["Goranth", "GoranthUG"],
+        "photos": ["GoranthPhoto", "GoranthUGPhoto"],
+        "file": "Goranth.zip",
+        "size": "XL",
+        "year": "2014"
+    },
+    {
+        "name": "Island Hoppers",
+        "minimaps": ["IslandHopper", "IslandHopperUG"],
+        "photos": ["IslandHopperPhoto", "IslandHopperUGPhoto"],
+        "file": "IslandHoppers.zip",
+        "size": "S",
+        "year": "2000"
+    },
+    {
+        "name": "Labyrinth",
+        "minimaps": ["Labyrinth", "LabyrinthUG"],
+        "photos": ["LabyrinthPhoto", "LabyrinthUGPhoto"],
+        "file": "Labyrinth.zip",
+        "size": "S",
+        "year": "1999"
+    },
+    {
+        "name": "Lines and Teles",
+        "minimaps": ["Lines", "LinesUG"],
+        "photos": ["LinesPhoto", "LinesUGPhoto"],
+        "file": "TelesAndLines.zip",
+        "size": "S",
+        "year": "2000"
+    },
+    {
+        "name": "Overrun",
+        "minimaps": ["Overrun", "OverrunUG"],
+        "photos": ["OverrunPhoto", "OverrunUGPhoto"],
+        "file": "Overrun.zip",
+        "size": "XL",
+        "year": "1999"
+    },
+    {
+        "name": "Realm Lords",
+        "minimaps": ["RealmLords", "RealmLordsUG"],
+        "photos": ["RealmLordsPhoto", "RealmLordsUGPhoto"],
+        "file": "RealmLords.zip",
+        "size": "XL",
+        "year": "2003"
+    },
+    {
+        "name": "Stranded",
+        "minimaps": ["Stranded", "StrandedUG"],
+        "photos": ["StrandedPhoto", "StrandedUGPhoto"],
+        "file": "RealmLords.zip",
+        "size": "XL",
+        "year": "2006"
+    },
+    {
+        "name": "Umalgarn",
+        "minimaps": ["Umalgarn", "UmalgarnUG"],
+        "photos": ["UmalgarnPhoto", "UmalgarnUGPhoto"],
+        "file": "Umalgarn.zip",
+        "size": "XL",
+        "year": "2008"
+    }    
+    
+]
