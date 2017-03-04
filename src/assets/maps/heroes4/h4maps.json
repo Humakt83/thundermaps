@@ -32,7 +32,7 @@
     {
         "name": "Charmers' Diplomacy",
         "minimaps": ["charmers_diplomacy"],
-        "photos": ["ChamerPhoto"],
+        "photos": ["CharmerPhoto"],
         "file": "charmersdiplomacy.zip",
         "size": "M",
         "year": "2003",
