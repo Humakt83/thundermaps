@@ -1,3 +1,5 @@
+import { MapSize } from '../shared/mapsize';
+
 export class H3Map {
 
     public static fromJson(json: any): H3Map {
@@ -6,10 +8,4 @@ export class H3Map {
 
     constructor(public name: string, public minimaps: string[], public photos: string[], public file: string, public size: MapSize, public year: number) {}
    
-}
-
-export enum MapSize {
-
-    XL, S, M, L
-    
 }

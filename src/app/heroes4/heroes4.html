@@ -1,0 +1,10 @@
+<div class="map" *ngFor="let map of maps">
+    <div class="minimap" *ngFor="let minimap of map.minimaps; let id = index">
+        <modal #photo>
+            <img class="photo" [src]="'assets/images/heroes4/' + map.photos[id] + '.jpg'">
+        </modal>
+        <img class="minimapImage" [src]="'assets/images/heroes4/' + minimap + '.jpg'" [show-modal]="photo">
+    </div>
+    <div class="title">{{map.name}}</div>
+    <div class="year">{{map.year}}</div>
+</div>
