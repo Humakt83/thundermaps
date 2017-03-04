@@ -13,7 +13,7 @@
     float: left;    
 }
 
-.minimap img {
+.minimapImage {
     height: 120px;
     cursor: pointer;
 }
@@ -35,4 +35,9 @@
     padding-top: 15px;
     font-weight: bold;
     display: inline-block;
+}
+
+.photo {
+    height: 500px;
+    width: 560px;
 }

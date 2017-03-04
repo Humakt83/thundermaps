@@ -42,7 +42,7 @@
     {
         "name": "Labyrinth",
         "minimaps": ["Labyrinth", "LabyrinthUG"],
-        "photos": ["LabyrinthPhoto", "LabyrinthUGPhoto"],
+        "photos": ["LabyPhoto", "LabyUGPhoto"],
         "file": "Labyrinth.zip",
         "size": "S",
         "year": "1999"

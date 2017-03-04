@@ -9,9 +9,11 @@ import { Heroes3Component } from './heroes3/heroes3.component';
 import { HomeComponent } from './home/home.component';
 import { Heroes3MapService } from './heroes3/heroes3map.service';
 import 'rxjs/Rx';
+import { ModalComponent } from './modal/modal.component';
+import { ModalDirective } from './modal/modal.directive';
 
 @NgModule({
-    declarations: [ThundermapsComponent, Heroes3Component, HomeComponent],
+    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent],
     imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true })],
     bootstrap: [ThundermapsComponent],
     providers: [HttpModule, Heroes3MapService]
