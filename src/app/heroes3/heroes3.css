@@ -7,15 +7,20 @@
     margin-bottom: 5px;
     padding: 3px;
     min-height: 120px;
+    background-image: url('assets/images/nav-background.jpg');
+    color: white;
 }
 
 .minimap {
-    float: left;    
+    float: left;
+    margin-right: 3px;
 }
 
 .minimapImage {
     height: 120px;
     cursor: pointer;
+    border: 2px ridge rgb(255, 255, 200);
+    border-radius: 7px;    
 }
 
 .title {
