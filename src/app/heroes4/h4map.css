@@ -1,0 +1,62 @@
+.description {
+    font-weight: bolder;
+    font-size: smaller;
+}
+
+.minimap {
+    float: left;
+    margin-right: 3px;
+}
+
+.minimapImage {
+    height: 120px;
+    cursor: pointer;
+    border: 2px ridge rgb(255, 255, 200);
+    border-radius: 7px;
+}
+
+.title {
+    cursor: pointer;
+    font-size: x-large;
+    left: 255px;
+    margin-left: 5px;
+}
+
+.year {
+    font-size: larger;
+    margin-right: 50px;
+    float: right;
+}
+
+.title,
+.year {
+    padding-top: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.description {
+    padding-left: 5px;
+    margin-right: 10px;
+    padding-top: 5px;
+}
+
+.photo {
+    height: 500px;
+    width: 560px;
+}
+
+.commentButton {
+    cursor: pointer;
+    float: right;    
+    margin-right: 10px;
+}
+
+.commentButton img {
+    height: 30px;
+    width: 50px;
+}
+
+p {
+    font-size: smaller;
+}

@@ -8,41 +8,5 @@
     padding: 3px;
     min-height: 120px;
     background-image: url('assets/images/nav-background.jpg');
-    color: white;
-}
-
-.minimap {
-    float: left;
-    margin-right: 3px;
-}
-
-.minimapImage {
-    height: 120px;
-    cursor: pointer;
-    border: 2px ridge rgb(255, 255, 200);
-    border-radius: 7px;    
-}
-
-.title {
-    cursor: pointer;
-    font-size: xx-large;
-    margin-left: 50px;
-}
-
-.year {
-    font-size: larger;
-    float: right;
-    margin-right: 50px;
-}
-
-.title,
-.year {
-    padding-top: 15px;
-    font-weight: bold;
-    display: inline-block;
-}
-
-.photo {
-    height: 500px;
-    width: 560px;
+    color: rgb(255, 255, 200);
 }
