@@ -14,5 +14,8 @@
     <img *ngIf="!buttonPressed" src="assets/images/heroes4/Button.jpg">
     <img *ngIf="buttonPressed" src="assets/images/heroes4/ButtonUp.jpg">
 </div>
+<div class="mapSize">
+    <img [src]="mapSize.getImage(map.size)">
+</div>
 <div class="year">{{map.year}}</div>    
 <div class="description">{{map.description}}</div>    

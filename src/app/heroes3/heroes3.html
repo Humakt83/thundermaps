@@ -6,5 +6,8 @@
         <img class="minimapImage" [src]="'assets/images/heroes3/' + minimap + '.jpg'" [show-modal]="photo">
     </div>
     <div class="title">{{map.name}}</div>
+    <div class="mapSize">
+        <img [src]="mapSize.getImage(map.size)">
+    </div>
     <div class="year">{{map.year}}</div>
 </div>
