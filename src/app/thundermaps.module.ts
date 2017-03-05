@@ -14,9 +14,10 @@ import { ModalDirective } from './modal/modal.directive';
 import { Heroes4Component } from './heroes4/heroes4.component';
 import { Heroes4MapService } from './heroes4/heroes4map.service';
 import { H4MapComponent } from './heroes4/h4map.component';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
-    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent],
+    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent],
     imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true })],
     bootstrap: [ThundermapsComponent],
     providers: [HttpModule, Heroes3MapService, Heroes4MapService]
