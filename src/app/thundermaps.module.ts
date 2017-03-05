@@ -7,19 +7,19 @@ import { ThundermapsComponent } from './thundermaps.component'
 import { ROUTES } from './thundermaps.routes';
 import { Heroes3Component } from './heroes3/heroes3.component';
 import { HomeComponent } from './home/home.component';
-import { Heroes3MapService } from './heroes3/heroes3map.service';
 import 'rxjs/Rx';
 import { ModalComponent } from './modal/modal.component';
 import { ModalDirective } from './modal/modal.directive';
 import { Heroes4Component } from './heroes4/heroes4.component';
-import { Heroes4MapService } from './heroes4/heroes4map.service';
+import { MapService } from './shared/map.service';
 import { H4MapComponent } from './heroes4/h4map.component';
 import { LinksComponent } from './links/links.component';
+import { Heroes5Component } from './heroes5/heroes5.component';
 
 @NgModule({
-    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent],
+    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent, Heroes5Component],
     imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true })],
     bootstrap: [ThundermapsComponent],
-    providers: [HttpModule, Heroes3MapService, Heroes4MapService]
+    providers: [HttpModule, MapService]
 })
 export class ThundermapsModule {}

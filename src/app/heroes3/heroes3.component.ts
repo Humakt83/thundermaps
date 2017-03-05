@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Heroes3MapService } from './heroes3map.service';
+import { MapService } from '../shared/map.service';
 import { H3Map } from './h3map';
 import { MapSize } from '../shared/mapsize';
 
@@ -13,11 +13,11 @@ export class Heroes3Component implements OnInit {
     maps: H3Map[] = [];
     mapSize = MapSize;
 
-    constructor(private mapService: Heroes3MapService) {      
+    constructor(private mapService: MapService) {      
     }
 
     ngOnInit() {
-        this.mapService.getMaps().subscribe(result => this.maps = result);
+        this.mapService.getH3Maps().subscribe(result => this.maps = result);
     }
 
 }

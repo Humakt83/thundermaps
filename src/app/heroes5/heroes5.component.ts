@@ -1,13 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { MapService } from '../shared/map.service';
-import { H4Map } from './h4map';
+import { H4Map } from '../heroes4/h4map';
 
 @Component({
-    selector: 'heroes4',
+    selector: 'heroes5',
     templateUrl: 'app/heroes4/heroes4.html',
     styleUrls: ['app/heroes4/heroes4.css']
 })
-export class Heroes4Component implements OnInit {
+export class Heroes5Component implements OnInit {
 
     maps: H4Map[] = [];
 
@@ -15,7 +15,7 @@ export class Heroes4Component implements OnInit {
     }
 
     ngOnInit() {
-        this.mapService.getH4Maps().subscribe(result => this.maps = result);
+        this.mapService.getH5Maps().subscribe(result => this.maps = result);
     }
 
 }
