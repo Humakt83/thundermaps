@@ -1,0 +1,6 @@
+<table>
+    <tr *ngFor="let row of pieceTable">
+        <td *ngFor="let column of row" [style.background]="'linear-gradient(to left top, ' + column.color1 + ', ' + column.color2 + ')' | safeCSS">
+        </td>
+    </tr>
+</table>

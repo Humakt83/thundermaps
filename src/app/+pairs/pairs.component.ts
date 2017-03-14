@@ -11,6 +11,7 @@ import { Pairs } from './pairs';
                     <div class="pairsButton" (click)="toSettings(${GameMode.MULTI})">MULTI</div>
                 </div>
                 <settings *ngIf="!selectGameMode && !gameStarted" [mode]="selectedGameMode" (game)="startGame($event)"></settings>
+                <game *ngIf="gameStarted" [pairs]="pairs"></game>
             </div>`,
     styleUrls: ['pairs.component.css']
 })
@@ -19,6 +20,7 @@ export class PairsComponent {
     selectGameMode : boolean = true;
     selectedGameMode : GameMode;
     gameStarted: boolean = false;
+    pairs: Pairs;
 
     toSettings(mode: GameMode) {
         this.selectGameMode = false;
@@ -26,7 +28,7 @@ export class PairsComponent {
     }
 
     startGame(pairs: Pairs) {
-        this.gameStarted = true;
-        console.log(pairs);
+        this.pairs = pairs;
+        this.gameStarted = true;        
     }
 }

@@ -3,6 +3,11 @@ import { Difficulty } from './difficulty';
 
 export class Pairs {
 
-    constructor(playerNames: string[], difficulty: Difficulty) {}
+    constructor(public playerNames: string[], public difficulty: Difficulty) {}
+
+    getNumberOfPieces(): number {
+        const mpModifier = this.playerNames.length > 1 ? 3 : 1;
+        return (this.difficulty + 1) * 5 * mpModifier;
+    }
 
 }
