@@ -21,9 +21,36 @@ export class GameComponent implements OnInit {
     @Input() pairs: Pairs;
     pieces: Piece[] = [];
     pieceTable: Piece[][];
+    clickedPieces: Piece[] = [];
+    clicks: number = 0;
+    gameOver: boolean = false;
 
     ngOnInit() {        
         this.generatePieces();
+    }
+
+    click(piece: Piece) {
+        if (piece.found) return;
+        this.clicks++;
+        if (this.clickedPieces.length > 1) {
+            this.clickedPieces.forEach(p => p.turned = false);
+            this.clickedPieces = [];
+        }
+        piece.turned = true;
+        this.clickedPieces.push(piece);
+        if (this.clickedPieces.length === 2) {
+            if (this.clickedPieces[0].pair === piece) {
+                this.clickedPieces.forEach(p => p.found = true);
+                this.clickedPieces = [];
+            }
+        }
+        this.checkGameStatus();
+    }
+
+    private checkGameStatus() {
+        if (this.pieces.filter(p => !p.found).length < 1) {
+            this.gameOver  = true;
+        }
     }
 
     private generatePieces() {
@@ -67,6 +94,7 @@ export class GameComponent implements OnInit {
 class Piece {
 
     turned: boolean = false;
+    found: boolean = false;
     pair: Piece;
     
     constructor(public color1: string, public color2: string, pair: Piece = undefined) {

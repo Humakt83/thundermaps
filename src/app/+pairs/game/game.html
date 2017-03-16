@@ -1,6 +1,13 @@
-<table>
-    <tr *ngFor="let row of pieceTable">
-        <td *ngFor="let column of row" [style.background]="'linear-gradient(to left top, ' + column.color1 + ', ' + column.color2 + ')' | safeCSS">
-        </td>
-    </tr>
-</table>
+<div>
+    <table>
+        <tr *ngFor="let row of pieceTable">
+            <td *ngFor="let column of row" (click)="click(column)"
+                [style.background]="(column.turned ? 'linear-gradient(to left top, ' + column.color1 + ', ' + column.color2 + ')' : 'black') | safeCSS">
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div class="gameOver" *ngIf="gameOver">Congratulations! You are victorious.</div>
+
+<div class="clicks"> {{clicks}} clicks </div>
