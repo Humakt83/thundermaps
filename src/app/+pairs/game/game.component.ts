@@ -24,9 +24,15 @@ export class GameComponent implements OnInit {
     clickedPieces: Piece[] = [];
     clicks: number = 0;
     gameOver: boolean = false;
+    activePlayer: Player;
+    players: Player[] = [];
 
     ngOnInit() {        
         this.generatePieces();
+        if (this.pairs.playerNames.length > 1) {
+            this.players = this.pairs.playerNames.map(n => new Player(n));
+            this.activePlayer = this.players[0];
+        }
     }
 
     click(piece: Piece) {
@@ -42,9 +48,21 @@ export class GameComponent implements OnInit {
             if (this.clickedPieces[0].pair === piece) {
                 this.clickedPieces.forEach(p => p.found = true);
                 this.clickedPieces = [];
+                if (this.activePlayer) {
+                    this.activePlayer.score++;
+                }
+            } else {
+                this.setNextActivePlayer();
             }
         }
         this.checkGameStatus();
+    }
+
+    private setNextActivePlayer() {
+        if (this.activePlayer) {
+            let index = this.players.indexOf(this.activePlayer) + 1;            
+            this.activePlayer = this.players[index >= this.players.length ? 0 : index];
+        }
     }
 
     private checkGameStatus() {
@@ -103,5 +121,12 @@ class Piece {
             pair.pair = this;
         }
     }
+}
 
+class Player {
+
+    score: number = 0;
+
+    constructor(public name: string) {
+    }
 }
