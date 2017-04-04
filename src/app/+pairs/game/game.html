@@ -7,8 +7,11 @@
 <div>
     <table>
         <tr *ngFor="let row of pieceTable">
-            <td *ngFor="let column of row" (click)="click(column)"
-                [style.background]="(column.turned ? 'linear-gradient(to left, ' + column.color1 + ', ' + column.color2 + ')' : 'linear-gradient(to top, black, gray, black') | safeCSS">
+            <td *ngFor="let column of row" (click)="click(column)">
+                <div *ngIf="!column.image || !column.turned" [style.background]="(column.turned ? 'linear-gradient(to left, ' + column.color1 + ', ' + column.color2 + ')' : 'linear-gradient(to top, black, gray, black') | safeCSS"></div>
+                <div *ngIf="column.image && column.turned">
+                    <img [src]="column.image">
+                </div>
             </td>
         </tr>
     </table>

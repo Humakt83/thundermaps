@@ -15,12 +15,12 @@ import { MapService } from './shared/map.service';
 import { H4MapComponent } from './heroes4/h4map.component';
 import { LinksComponent } from './links/links.component';
 import { Heroes5Component } from './heroes5/heroes5.component';
-import { PairsModule } from './+pairs/index';
+import { PairsModule, PairsService } from './+pairs/index';
 
 @NgModule({
     declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent, Heroes5Component],
     imports: [BrowserModule, HttpModule, FormsModule, PairsModule, RouterModule.forRoot(ROUTES, { useHash: true })],
     bootstrap: [ThundermapsComponent],
-    providers: [HttpModule, MapService]
+    providers: [HttpModule, MapService, PairsService]
 })
 export class ThundermapsModule {}
