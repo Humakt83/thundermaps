@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PairsService } from './+pairs/index';
+import { PairsService } from 'ng2pairs';
 
 const PREFIX_TO_IMAGES = 'assets/images/pairs/';
 const IMAGE_POSTFIX = '.png';

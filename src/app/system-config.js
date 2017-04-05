@@ -9,10 +9,12 @@
       '@angular/http': 'lib/http.umd.js',
       '@angular/router': 'lib/router.umd.js',
       '@angular/forms': 'lib/forms.umd.js',
-      "rxjs": 'lib/rxjs'
+      'ng2pairs': 'lib/dist',
+      'rxjs': 'lib/rxjs'
     },
     packages: {
-      "rxjs": {main: "Rx.js", defaultExtension: "js"}
+      "rxjs": {main: "Rx.js", defaultExtension: "js"},
+      "ng2pairs": {main: "index.js", defaultExtension: "js"}
     }
   });
 })(this);

@@ -31,6 +31,7 @@ gulp.task('copy:libs', ['clean'], function() {
         'node_modules/@angular/platform-browser/bundles/platform-browser.umd.js',
         'node_modules/@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
         'node_modules/@angular/router/bundles/router.umd.js',
+        'node_modules/ng2pairs/**/*.js'
     ])
     .pipe(gulp.dest('dist/lib'))
 });

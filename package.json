@@ -2,7 +2,7 @@
   "name": "thundermaps",
   "version": "1.0.0",
   "description": "Heroes of Might & Magic maps site",
-    "dependencies": {
+  "dependencies": {
     "@angular/common": "^2.2.4",
     "@angular/compiler": "^2.2.4",
     "@angular/core": "^2.2.4",
@@ -12,6 +12,7 @@
     "@angular/platform-browser-dynamic": "^2.2.4",
     "@angular/router": "^3.0.0",
     "core-js": "^2.4.1",
+    "ng2pairs": "^1.0.1",
     "reflect-metadata": "^0.1.8",
     "rxjs": "5.0.0-beta.12",
     "systemjs": "0.19.39",
