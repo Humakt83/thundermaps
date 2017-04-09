@@ -3,7 +3,7 @@
         "name": "Arganthia",
         "minimaps": ["Arganthia", "ArganthiaUG"],
         "photos": ["ArganthiaPhoto", "ArganthiaUGPhoto"],
-        "file": "Arganthia.zip",
+        "file": "Arganthia.h3m",
         "size": "XL",
         "year": "2001"
     },
@@ -11,7 +11,7 @@
         "name": "Challenge!!!",
         "minimaps": ["Challenge", "ChallengeUG"],
         "photos": ["ChallengePhoto", "ChallengeUGPhoto"],
-        "file": "Challenge!!!.zip",
+        "file": "Challenge!!!.h3m",
         "size": "S",
         "year": "2000"
     },
@@ -19,7 +19,7 @@
         "name": "Circle",
         "minimaps": ["Circle", "CircleUG"],
         "photos": ["CirclePhoto", "CircleUGPhoto"],
-        "file": "Circle",
+        "file": "Circle.h3m",
         "size": "M",
         "year": "2000"
     },
@@ -27,7 +27,7 @@
         "name": "Goranth",
         "minimaps": ["Goranth", "GoranthUG"],
         "photos": ["GoranthPhoto", "GoranthUGPhoto"],
-        "file": "Goranth.zip",
+        "file": "Goranth.h3m",
         "size": "XL",
         "year": "2013"
     },
@@ -35,7 +35,7 @@
         "name": "Island Hoppers",
         "minimaps": ["IslandHopper", "IslandHopperUG"],
         "photos": ["IslandHopperPhoto", "IslandHopperUGPhoto"],
-        "file": "IslandHoppers.zip",
+        "file": "IslandHoppers.h3m",
         "size": "S",
         "year": "2000"
     },
@@ -43,7 +43,7 @@
         "name": "Labyrinth",
         "minimaps": ["Labyrinth", "LabyrinthUG"],
         "photos": ["LabyPhoto", "LabyUGPhoto"],
-        "file": "Labyrinth.zip",
+        "file": "Labyrinth.h3m",
         "size": "S",
         "year": "1999"
     },
@@ -51,7 +51,7 @@
         "name": "Lines and Teles",
         "minimaps": ["Lines", "LinesUG"],
         "photos": ["LinesPhoto", "LinesUGPhoto"],
-        "file": "TelesAndLines.zip",
+        "file": "TelesAndLines.h3m",
         "size": "S",
         "year": "2000"
     },
@@ -67,7 +67,7 @@
         "name": "Realm Lords",
         "minimaps": ["RealmLords", "RealmLordsUG"],
         "photos": ["RealmLordsPhoto", "RealmLordsUGPhoto"],
-        "file": "RealmLords.zip",
+        "file": "RealmLords.h3m",
         "size": "XL",
         "year": "2003"
     },
@@ -75,15 +75,31 @@
         "name": "Stranded",
         "minimaps": ["Stranded", "StrandedUG"],
         "photos": ["StrandedPhoto", "StrandedUGPhoto"],
-        "file": "RealmLords.zip",
+        "file": "Stranded.h3m",
         "size": "XL",
         "year": "2006"
+    },
+    {
+        "name": "Thundermaps",
+        "minimaps": ["thundermaps_minimap", "thundermaps_minimap_ug"],
+        "photos": ["thundermaps", "thundermaps_ug"],
+        "file": "Thundermaps.h3m",
+        "size": "XL",
+        "year": "2017"
+    },
+    {
+        "name": "Mixture of Races",
+        "minimaps": ["mixture_minimap", "mixture_minimap_ug"],
+        "photos": ["mixture", "mixture_ug"],
+        "file": "Mixture.h3m",
+        "size": "XL",
+        "year": "2017"
     },
     {
         "name": "Umalgarn",
         "minimaps": ["Umalgarn", "UmalgarnUG"],
         "photos": ["UmalgarnPhoto", "UmalgarnUGPhoto"],
-        "file": "Umalgarn.zip",
+        "file": "Umalgarn.h3m",
         "size": "XL",
         "year": "2008"
     }    
