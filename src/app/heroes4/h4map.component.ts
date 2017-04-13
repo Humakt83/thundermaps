@@ -4,8 +4,8 @@ import { MapSize } from '../shared/mapsize';
 
 @Component({
     selector: 'h4map',
-    templateUrl: 'app/heroes4/h4map.html',
-    styleUrls: ['app/heroes4/h4map.css']
+    templateUrl: 'h4map.html',
+    styleUrls: ['h4map.css']
 })
 export class H4MapComponent {
 

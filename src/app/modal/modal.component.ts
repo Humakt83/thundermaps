@@ -2,8 +2,8 @@ import { Component, Input } from '@angular/core';
 
 @Component({
     selector: 'modal',
-    templateUrl: 'app/modal/modal.html',
-    styleUrls: ['app/modal/modal.css']    
+    templateUrl: 'modal.html',
+    styleUrls: ['modal.css']    
 })
 export class ModalComponent {
 

@@ -8,8 +8,8 @@ const IMAGES = ['Arrow', 'Axe', 'Backpack', 'Book', 'Boots', 'Bow', 'Cards', 'Ch
 
 @Component({
     selector: 'thundermaps',
-    templateUrl: 'app/thundermaps.html',
-    styleUrls: ['app/thundermaps.css']    
+    templateUrl: 'thundermaps.html',
+    styleUrls: ['thundermaps.css']    
 })
 export class ThundermapsComponent implements OnInit {
 

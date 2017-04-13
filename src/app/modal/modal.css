@@ -16,7 +16,7 @@
     margin-right: -400px;
     width: 800px;
     cursor: pointer;
-    background-image: url('assets/images/nav-background.jpg');
+    background-image: url('../../assets/images/nav-background.jpg');
     border: 3px solid rgb(255, 255, 200);
     border-radius: 15px;
     padding: 25px;

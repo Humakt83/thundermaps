@@ -19,7 +19,7 @@ import { PairsModule } from 'ng2pairs';
 
 @NgModule({
     declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent, Heroes5Component],
-    imports: [BrowserModule, HttpModule, FormsModule, PairsModule.forRoot(), RouterModule.forRoot(ROUTES, { useHash: true })],
+    imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true }), PairsModule.forRoot()],
     bootstrap: [ThundermapsComponent],
     providers: [HttpModule, MapService]
 })

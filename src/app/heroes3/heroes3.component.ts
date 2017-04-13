@@ -5,8 +5,8 @@ import { MapSize } from '../shared/mapsize';
 
 @Component({
     selector: 'heroes3',
-    templateUrl: 'app/heroes3/heroes3.html',
-    styleUrls: ['app/heroes3/heroes3.css']
+    templateUrl: 'heroes3.html',
+    styleUrls: ['heroes3.css']
 })
 export class Heroes3Component implements OnInit {
 

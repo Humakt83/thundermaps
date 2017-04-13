@@ -4,8 +4,8 @@ import { H4Map } from './h4map';
 
 @Component({
     selector: 'heroes4',
-    templateUrl: 'app/heroes4/heroes4.html',
-    styleUrls: ['app/heroes4/heroes4.css']
+    templateUrl: 'heroes4.html',
+    styleUrls: ['heroes4.css']
 })
 export class Heroes4Component implements OnInit {
 

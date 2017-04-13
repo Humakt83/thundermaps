@@ -3,8 +3,8 @@ import { quotes } from './quotes';
 
 @Component({
     selector: 'home',
-    templateUrl: 'app/home/home.html',
-    styleUrls: ['app/home/home.css']
+    templateUrl: 'home.html',
+    styleUrls: ['home.css']
 })
 export class HomeComponent {
 
