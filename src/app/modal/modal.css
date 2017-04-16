@@ -11,19 +11,33 @@
 
 .modal {
     position: fixed;
-    top: 10%;
+    top: 20px;
     right: 50%;
     margin-right: -400px;
     width: 800px;
+    max-width: 90%;
     cursor: pointer;
     background-image: url('../../assets/images/nav-background.jpg');
     border: 3px solid rgb(255, 255, 200);
     border-radius: 15px;
     padding: 25px;
+    overflow: auto;
 }
 
 .modalContent {
     margin: auto;
     text-align: center;
     display: block;
+}
+
+
+
+@media (max-width: 800px) {
+
+    .modal {
+        top: 5px;
+        width: 90%;
+        margin-right: 0;
+        right: 0;
+    }
 }

@@ -57,3 +57,15 @@
     height: 26px;
     border: 3px solid black;
 }
+
+@media (max-width: 600px) {
+    
+    .title {
+        margin-left: 10px;
+        font-size: larger;
+    }
+
+    .year {
+        font-size: smaller;
+    }
+}

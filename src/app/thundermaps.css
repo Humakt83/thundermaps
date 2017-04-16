@@ -51,3 +51,34 @@ div.logo {
 div.logo > img {
     border: 5px solid rgb(240, 240, 50);
 }
+
+@media (max-width: 1400px) {
+
+    div.content {
+        width: 90%;
+    }
+
+    nav { 
+        width: 80%;
+    }
+
+    nav a {
+        font-size: larger;
+    }
+}
+
+@media (max-width: 600px) {
+
+    div.content {
+        width: 96%;
+    }
+
+    nav { 
+        width: 90%;
+    }
+
+    nav a {
+        font-size: small;
+        font-weight: normal;
+    }
+}
