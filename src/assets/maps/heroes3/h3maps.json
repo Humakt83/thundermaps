@@ -96,6 +96,14 @@
         "year": "2017"
     },
     {
+        "name": "Tunnels of Zaan",
+        "minimaps": ["zaan_minimap", "zaan_minimap_ug"],
+        "photos": ["zaan", "zaan_ug"],
+        "file": "TunnelsOfZaan.h3m",
+        "size": "XL",
+        "year": "2017"
+    },
+    {
         "name": "Umalgarn",
         "minimaps": ["Umalgarn", "UmalgarnUG"],
         "photos": ["UmalgarnPhoto", "UmalgarnUGPhoto"],
