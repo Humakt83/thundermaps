@@ -26,7 +26,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build",
+    "prodbuild": "ng build --env=prod"
   },
   "repository": {
     "type": "git",
