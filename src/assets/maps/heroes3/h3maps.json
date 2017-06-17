@@ -110,6 +110,14 @@
         "file": "Umalgarn.h3m",
         "size": "XL",
         "year": "2008"
-    }    
+    },
+    {
+        "name": "Gauntlet of Spheres",
+        "minimaps": ["gauntlet", "gauntletUG"],
+        "photos": ["gauntletPhoto", "gauntletUGPhoto"],
+        "file": "GauntletOfSpheres",
+        "size": "XL",
+        "year": "2017"
+    }
     
 ]
