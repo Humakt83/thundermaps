@@ -1,4 +1,5 @@
-<div class="map" *ngFor="let map of maps">
+<mapsort></mapsort>
+<div class="map" *ngFor="let map of maps | sortmaps: sort">
     <div class="minimap" *ngFor="let minimap of map.minimaps; let id = index">
         <modal #photo>
             <img class="photo" [src]="'assets/images/heroes3/' + map.photos[id] + '.jpg'">

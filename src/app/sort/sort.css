@@ -1,0 +1,27 @@
+.sortComponent {
+    margin-top: 3px;
+    margin-bottom: 5px;
+    text-align: right;
+    margin-right: 8%;
+}
+
+.sortButton {
+    background: linear-gradient(to right bottom, black, rgb(150, 150, 150));
+    color: white;
+    font-weight: bold;
+    font-size: smaller;
+    padding: 2px;
+    cursor: pointer; 
+}
+
+.sortButton:active,
+.sortButton:hover {
+    background: linear-gradient(to right bottom, white, rgb(150, 150, 150));
+    color: black;
+}
+
+.sortText {
+    font-weight: bold;
+    font-size: smaller;
+    cursor: default;
+}

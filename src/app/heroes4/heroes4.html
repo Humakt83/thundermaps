@@ -1,3 +1,4 @@
-<div class="map" *ngFor="let map of maps">    
+<mapsort></mapsort>
+<div class="map" *ngFor="let map of maps | sortmaps: sort">    
     <h4map [map]="map"></h4map>
 </div>

@@ -16,11 +16,14 @@ import { H4MapComponent } from './heroes4/h4map.component';
 import { LinksComponent } from './links/links.component';
 import { Heroes5Component } from './heroes5/heroes5.component';
 import { PairsModule } from 'ng2pairs';
+import { SortService } from './sort/sort.service';
+import { SortComponent } from './sort/sort.component';
+import { SortPipe } from './sort/sort.pipe';
 
 @NgModule({
-    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent, Heroes5Component],
+    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent, Heroes5Component, SortComponent, SortPipe],
     imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true }), PairsModule.forRoot()],
     bootstrap: [ThundermapsComponent],
-    providers: [HttpModule, MapService]
+    providers: [HttpModule, MapService, SortService]
 })
 export class ThundermapsModule {}

@@ -114,7 +114,7 @@
     {
         "name": "Gauntlet of Spheres",
         "minimaps": ["gauntlet", "gauntletUG"],
-        "photos": ["gauntletPhoto", "gauntletUGPhoto"],
+        "photos": ["gauntletphoto", "gauntletphotoUG"],
         "file": "GauntletOfSpheres",
         "size": "XL",
         "year": "2017"
