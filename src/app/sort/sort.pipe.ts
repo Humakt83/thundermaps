@@ -2,16 +2,15 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { SortBy, Sort } from './sort.service';
 
 @Pipe({
-    name: 'sortmaps',
-    pure: false
+    name: 'sortmaps'
 })
 export class SortPipe implements PipeTransform {
 
     private compareWithAscending = (a: any, b: any, ascending: boolean): number => {
-        if (!ascending) {
-            return b > a ? 1 : -1;
-        }
-        return a > b ? 1 : -1;
+        let ascendingMultiplier = ascending ? -1 : 1;                 
+        if (b > a) return 1 * ascendingMultiplier; 
+        if (a > b) return -1 * ascendingMultiplier;            
+        return 0;
     }
 
     transform(maps: any[], sort: Sort): any[] {
