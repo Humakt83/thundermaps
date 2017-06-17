@@ -1,4 +1,4 @@
-import { MapSize } from '../shared/mapsize';
+import { MapSize } from '../map/mapsize';
 
 export class H4Map {
 

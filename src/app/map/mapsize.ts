@@ -1,6 +1,6 @@
 export enum MapSize {
 
-    XL, S, M, L
+    S, M, L, XL
     
 }
 

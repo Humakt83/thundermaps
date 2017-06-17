@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { MapService } from '../shared/map.service';
+import { MapService } from '../map/map.service';
 import { H3Map } from './h3map';
-import { MapSize } from '../shared/mapsize';
+import { MapSize } from '../map/mapsize';
 import { SortService, Sort } from '../sort/sort.service';
 import { Subscription } from 'rxjs/Subscription';
 

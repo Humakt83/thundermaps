@@ -20,5 +20,5 @@ export class Sort {
 }
 
 export enum SortBy {
-    NAME, YEAR
+    NAME, YEAR, SIZE
 }

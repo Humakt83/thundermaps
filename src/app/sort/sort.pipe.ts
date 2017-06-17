@@ -17,6 +17,8 @@ export class SortPipe implements PipeTransform {
     transform(maps: any[], sort: Sort): any[] {
         if (sort.sortBy === SortBy.YEAR) {
             return maps.sort((a: any, b: any) => this.compareWithAscending(a.year, b.year, sort.ascending));
+        } else if (sort.sortBy === SortBy.SIZE) {
+            return maps.sort((a: any, b: any) => this.compareWithAscending(a.size, b.size, sort.ascending));
         } else {
             return maps.sort((a: any, b: any) => this.compareWithAscending(a.name, b.name, sort.ascending));
         }

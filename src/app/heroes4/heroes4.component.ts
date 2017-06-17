@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { MapService } from '../shared/map.service';
+import { MapService } from '../map/map.service';
 import { H4Map } from './h4map';
 import { SortService, Sort } from '../sort/sort.service';
 import { Subscription } from 'rxjs/Subscription';

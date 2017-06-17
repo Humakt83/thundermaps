@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { H4Map } from './h4map';
-import { MapSize } from '../shared/mapsize';
+import { MapSize } from '../map/mapsize';
 
 @Component({
     selector: 'h4map',
