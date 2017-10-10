@@ -118,6 +118,14 @@
         "file": "GauntletOfSpheres.h3m",
         "size": "XL",
         "year": "2017"
+    },
+    {
+        "name": "Nose of Chaos",
+        "minimaps": ["nose", "noseUG"],
+        "photos": ["nosePhoto", "nosePhotoUG"],
+        "file": "ChaosOfThree.h3m",
+        "size": "XL",
+        "year": "2017"
     }
     
 ]
