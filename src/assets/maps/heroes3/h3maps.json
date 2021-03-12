@@ -126,6 +126,21 @@
         "file": "ChaosOfThree.h3m",
         "size": "XL",
         "year": "2017"
-    }
-    
+    },
+    {
+        "name": "Tringle Trials",
+        "minimaps": ["trials", "trialsUG"],
+        "photos": ["trialsPhoto", "trialsPhotoUG"],
+        "file": "Trials.h3m",
+        "size": "XL",
+        "year": "2021"
+    },
+    {
+        "name": "Stormia",
+        "minimaps": ["Stormia", "StormiaUG"],
+        "photos": ["StormiaPhoto", "StormiaPhotoUG"],
+        "file": "Stormia.h3m",
+        "size": "XL",
+        "year": "2020"
+    }    
 ]
