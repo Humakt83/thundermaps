@@ -9,7 +9,7 @@
     </modal>
     <img class="minimapImage" [src]="'assets/images/heroes4/' + minimap + '.jpg'" [show-modal]="photo">
 </div>
-<div class="title"><a [href]="'assets/maps/heroes4/' + map.file">{{map.name}}</a></div>
+<div class="title"><a [href]="'assets/maps/heroes4/' + map.file" download>{{map.name}}</a></div>
 <div class="commentButton" [show-modal]="comments" (mouseenter)="buttonPressed = true" (mouseleave)="buttonPressed = false" title="Author's comments">
     <img *ngIf="!buttonPressed" src="assets/images/heroes4/Button.jpg">
     <img *ngIf="buttonPressed" src="assets/images/heroes4/ButtonUp.jpg">
