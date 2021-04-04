@@ -27,7 +27,7 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "prodbuild": "ng build --env=prod"
+    "prodbuild": "ng build --env=prod --base-href ./"
   },
   "repository": {
     "type": "git",
