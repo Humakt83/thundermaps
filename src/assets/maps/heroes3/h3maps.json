@@ -142,5 +142,12 @@
         "file": "Stormia.h3m",
         "size": "XL",
         "year": "2020"
+    },
+    {   "name": "Destiny or Death",
+        "minimaps": ["Choices", "ChoicesUG"],
+        "photos": ["ChoicesPhoto", "ChoicesPhotoUG"],
+        "file": "Choices.h3m",
+        "size": "XL",
+        "year": "2021" 
     }    
 ]
