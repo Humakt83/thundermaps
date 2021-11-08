@@ -149,5 +149,12 @@
         "file": "Choices.h3m",
         "size": "XL",
         "year": "2021" 
-    }    
+    },
+    {   "name": "Masterpiece",
+        "minimaps": ["Masterpiece", "MasterpieceUG"],
+        "photos": ["MasterpiecePhoto", "MasterpieceUGPhoto"],
+        "file": "Masterpiece.h3m",
+        "size": "XL",
+        "year": "2021" 
+    }        
 ]
