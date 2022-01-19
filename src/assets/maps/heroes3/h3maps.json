@@ -145,7 +145,7 @@
     },
     {   "name": "Destiny or Death",
         "minimaps": ["Choices", "ChoicesUG"],
-        "photos": ["ChoicesPhoto", "ChoicesPhotoUG"],
+        "photos": ["ChoicesPhoto", "ChoicesUGPhoto"],
         "file": "Choices.h3m",
         "size": "XL",
         "year": "2021" 
@@ -156,5 +156,12 @@
         "file": "Masterpiece.h3m",
         "size": "XL",
         "year": "2021" 
+    },
+    {   "name": "Might of Oaks",
+        "minimaps": ["Oaks", "OaksUG"],
+        "photos": ["OaksPhoto", "OaksUGPhoto"],
+        "file": "Oaks.h3m",
+        "size": "XL",
+        "year": "2022"    
     }        
 ]
