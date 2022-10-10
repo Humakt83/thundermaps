@@ -143,24 +143,42 @@
         "size": "XL",
         "year": "2020"
     },
-    {   "name": "Destiny or Death",
+    {   
+        "name": "Destiny or Death",
         "minimaps": ["Choices", "ChoicesUG"],
         "photos": ["ChoicesPhoto", "ChoicesUGPhoto"],
         "file": "Choices.h3m",
         "size": "XL",
         "year": "2021" 
     },
-    {   "name": "Masterpiece",
+    {   
+        "name": "Masterpiece",
         "minimaps": ["Masterpiece", "MasterpieceUG"],
         "photos": ["MasterpiecePhoto", "MasterpieceUGPhoto"],
         "file": "Masterpiece.h3m",
         "size": "XL",
         "year": "2021" 
     },
-    {   "name": "Might of Oaks",
+    {   
+        "name": "Might of Oaks",
         "minimaps": ["Oaks", "OaksUG"],
         "photos": ["OaksPhoto", "OaksUGPhoto"],
         "file": "Oaks.h3m",
+        "size": "XL",
+        "year": "2022"    
+    },
+    {   "name": "Time Times Time",
+        "minimaps": ["Times", "TimesUG"],
+        "photos": ["TimesPhoto", "TimesUGPhoto"],
+        "file": "TimesTimesTimes.h3m",
+        "size": "XL",
+        "year": "2022"
+    },
+    {   
+        "name": "Run!",
+        "minimaps": ["Run", "RunUG"],
+        "photos": ["RunPhoto", "RunUGPhoto"],
+        "file": "Run.h3m",
         "size": "XL",
         "year": "2022"    
     }        
