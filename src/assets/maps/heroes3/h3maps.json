@@ -181,5 +181,13 @@
         "file": "Run.h3m",
         "size": "XL",
         "year": "2022"    
+    },
+    {   
+        "name": "Might nor Magic",
+        "minimaps": ["Nor", "NorUG"],
+        "photos": ["NorPhoto", "NorUGPhoto"],
+        "file": "Nor.h3m",
+        "size": "XL",
+        "year": "2023"    
     }        
 ]
