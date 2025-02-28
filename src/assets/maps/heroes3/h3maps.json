@@ -189,5 +189,13 @@
         "file": "Nor.h3m",
         "size": "XL",
         "year": "2023"    
+    },
+    {
+        "name": "Castle Fortress",
+        "minimaps": ["Fortress", "FortressUG"],
+        "photos": ["FortressPhoto", "FortressUGPhoto"],
+        "file": "Fortifications.h3m",
+        "size": "XL",
+        "year": 2024
     }        
 ]
