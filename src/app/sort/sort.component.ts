@@ -4,7 +4,8 @@ import { SortService, SortBy } from './sort.service';
 @Component({
     selector: 'mapsort',
     templateUrl: 'sort.html',
-    styleUrls: ['sort.css']
+    styleUrls: ['sort.css'],
+    standalone: false
 })
 export class SortComponent {
 

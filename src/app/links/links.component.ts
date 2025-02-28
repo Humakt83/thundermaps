@@ -5,7 +5,8 @@ const IMAGE_PREFIX: string = 'assets/images/';
 @Component({
     selector: 'links',
     templateUrl: 'links.html',
-    styleUrls: ['links.css']
+    styleUrls: ['links.css'],
+    standalone: false
 })
 export class LinksComponent {
 

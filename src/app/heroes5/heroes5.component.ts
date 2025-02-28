@@ -5,7 +5,8 @@ import { H4Map } from '../heroes4/h4map';
 @Component({
     selector: 'heroes5',
     templateUrl: 'heroes5.html',
-    styleUrls: ['../heroes4/heroes4.css']
+    styleUrls: ['../heroes4/heroes4.css'],
+    standalone: false
 })
 export class Heroes5Component implements OnInit {
 
@@ -15,7 +16,7 @@ export class Heroes5Component implements OnInit {
     }
 
     ngOnInit() {
-        this.mapService.getH5Maps().first().subscribe(result => this.maps = result);
+        this.mapService.getH5Maps().subscribe(result => this.maps = result);
     }
 
 }

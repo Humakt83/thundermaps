@@ -1,11 +1,11 @@
 import { Directive, HostListener, Input } from '@angular/core';
 import { ModalComponent } from './modal.component';
 
-@Directive({ selector: '[show-modal]'})
+@Directive({ selector: '[show-modal]', standalone: false})
 export class ModalDirective {
 
     @Input('show-modal')
-    content: ModalComponent;
+    content: ModalComponent | null = null;
 
     constructor() {
     }
@@ -16,6 +16,6 @@ export class ModalDirective {
     }
 
     private showModal() {
-        this.content.show();
+        if (this.content ) this.content.show();
     }
 }

@@ -7,5 +7,5 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-const platform = platformBrowserDynamic();
+
 platformBrowserDynamic().bootstrapModule(ThundermapsModule);

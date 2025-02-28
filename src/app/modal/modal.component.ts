@@ -1,9 +1,10 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
     selector: 'modal',
     templateUrl: 'modal.html',
-    styleUrls: ['modal.css']    
+    styleUrls: ['modal.css'],
+    standalone: false  
 })
 export class ModalComponent {
 

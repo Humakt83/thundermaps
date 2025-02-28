@@ -3,32 +3,35 @@ import { MapService } from '../map/map.service';
 import { H3Map } from './h3map';
 import { MapSize } from '../map/mapsize';
 import { SortService, Sort } from '../sort/sort.service';
-import { Subscription } from 'rxjs/Subscription';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'heroes3',
     templateUrl: 'heroes3.html',
-    styleUrls: ['heroes3.css']
+    styleUrls: ['heroes3.css'],
+    standalone: false
 })
 export class Heroes3Component implements OnInit, OnDestroy {
 
     maps: H3Map[] = [];
     mapSize = MapSize;
-    sort: Sort;
+    public sort: Sort = new Sort();
 
-    private sortSubscription: Subscription;
+    private sortSubscription?: Subscription;
     
 
     constructor(private mapService: MapService, private sortService: SortService) {
     }
 
     ngOnInit() {
-        this.mapService.getH3Maps().first().subscribe(result => this.maps = result);
-        this.sortSubscription = this.sortService.sortSubject.subscribe(result => this.sort = result);
+        this.mapService.getH3Maps().subscribe(result => this.maps = result);
+        this.sortService.sortSubject.subscribe(result => this.sort = result);
     }
 
     ngOnDestroy() {
-        this.sortSubscription.unsubscribe();
+        if (this.sortSubscription) {
+            this.sortSubscription.unsubscribe();
+        }
     }
 
 }

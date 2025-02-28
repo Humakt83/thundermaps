@@ -7,7 +7,7 @@ export enum MapSize {
 export namespace MapSize {
 
     export function getImage(mapSize: MapSize) {
-        return 'assets/images/' + MapSize[mapSize] + '.jpg';
+        return 'assets/images/' + mapSize + '.jpg';
     }
 
 }

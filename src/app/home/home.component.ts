@@ -4,7 +4,8 @@ import { quotes } from './quotes';
 @Component({
     selector: 'home',
     templateUrl: 'home.html',
-    styleUrls: ['home.css']
+    styleUrls: ['home.css'],
+    standalone: false
 })
 export class HomeComponent {
 

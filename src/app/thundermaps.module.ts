@@ -1,29 +1,33 @@
-import { NgModule }       from '@angular/core';
+import { ApplicationRef, NgModule }       from '@angular/core';
 import { BrowserModule  } from '@angular/platform-browser';
-import { HttpModule } from '@angular/http';
-import { RouterModule } from '@angular/router';
+import { PreloadAllModules, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
-import { ThundermapsComponent } from './thundermaps.component'
 import { ROUTES } from './thundermaps.routes';
-import { Heroes3Component } from './heroes3/heroes3.component';
+import 'rxjs';
+import { MapService } from './map/map.service';
+import { SortService } from './sort/sort.service';
+import { provideHttpClient } from '@angular/common/http';
+import { ThundermapsComponent } from './thundermaps.component';
 import { HomeComponent } from './home/home.component';
-import 'rxjs/Rx';
+import { SortComponent } from './sort/sort.component';
+import { SortPipe } from './sort/sort.pipe';
 import { ModalComponent } from './modal/modal.component';
 import { ModalDirective } from './modal/modal.directive';
-import { Heroes4Component } from './heroes4/heroes4.component';
-import { MapService } from './map/map.service';
-import { H4MapComponent } from './heroes4/h4map.component';
 import { LinksComponent } from './links/links.component';
+import { Heroes3Component } from './heroes3/heroes3.component';
+import { Heroes4Component } from './heroes4/heroes4.component';
 import { Heroes5Component } from './heroes5/heroes5.component';
-import { PairsModule } from 'ng2pairs';
-import { SortService } from './sort/sort.service';
-import { SortComponent } from './sort/sort.component';
-import { SortPipe } from './sort/sort.pipe';
+import { H4MapComponent } from './heroes4/h4map.component';
 
 @NgModule({
-    declarations: [ModalComponent, ModalDirective, ThundermapsComponent, Heroes3Component, HomeComponent, Heroes4Component, H4MapComponent, LinksComponent, Heroes5Component, SortComponent, SortPipe],
-    imports: [BrowserModule, HttpModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true }), PairsModule.forRoot()],
     bootstrap: [ThundermapsComponent],
-    providers: [HttpModule, MapService, SortService]
+    imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })],
+    providers: [MapService, SortService, provideHttpClient()],
+    declarations: [ThundermapsComponent, HomeComponent, SortComponent, 
+        SortPipe, ModalComponent, ModalDirective, LinksComponent, Heroes3Component, 
+        Heroes4Component, Heroes5Component, H4MapComponent]
 })
-export class ThundermapsModule {}
+export class ThundermapsModule {
+
+    constructor(public appRef: ApplicationRef) { }
+}
