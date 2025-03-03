@@ -18,10 +18,11 @@ import { Heroes3Component } from './heroes3/heroes3.component';
 import { Heroes4Component } from './heroes4/heroes4.component';
 import { Heroes5Component } from './heroes5/heroes5.component';
 import { H4MapComponent } from './heroes4/h4map.component';
+import { PairsModule } from 'ng2pairs';
 
 @NgModule({
     bootstrap: [ThundermapsComponent],
-    imports: [BrowserModule, FormsModule, RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })],
+    imports: [BrowserModule, FormsModule, PairsModule.forRoot(), RouterModule.forRoot(ROUTES, { useHash: true, preloadingStrategy: PreloadAllModules })],
     providers: [MapService, SortService, provideHttpClient()],
     declarations: [ThundermapsComponent, HomeComponent, SortComponent, 
         SortPipe, ModalComponent, ModalDirective, LinksComponent, Heroes3Component, 
