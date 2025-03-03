@@ -82,3 +82,29 @@ div.logo > img {
         font-weight: normal;
     }
 }
+
+.pairs table td {
+    width: 80px;
+    height: 80px;
+    align-content: center;
+    background-color: white;
+}
+
+.pairs .pairsButton {
+    background: url('../assets/images/nav-background.jpg') !important;
+}
+
+.pairs .pairsButton:hover {
+    background: url('../assets/images/content-background.jpg') !important;
+    color: black !important;
+}
+
+.pairs .clicks {
+    margin-bottom: 1rem;
+    background: url('../assets/images/nav-background.jpg') !important;
+    color: rgb(255, 255, 200) !important;
+}
+
+.pairs .piece--default {
+    background: url('../assets/images/nav-background.jpg');
+}
