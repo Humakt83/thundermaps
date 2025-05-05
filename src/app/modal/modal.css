@@ -28,10 +28,9 @@
     margin: auto;
     text-align: center;
     display: block;
-    height: 80vh;
+    max-height: 90vh;
     overflow-y: auto;
 }
-
 
 @media (max-width: 800px) {
 
