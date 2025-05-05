@@ -10,3 +10,10 @@
     background-image: url('../../assets/images/nav-background.jpg');
     color: rgb(255, 255, 200);
 }
+
+@media (max-width: 600px) {
+
+    .map {
+        width: 96%;
+    }
+}

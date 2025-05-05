@@ -1,0 +1,10 @@
+h2 {
+    font-size: 36px;
+    padding: 0.5rem 1rem;
+    background-image: url('../../assets/images/nav-background.jpg');
+    max-width: fit-content;
+    border: 3px solid black;
+    margin: 1rem auto;
+    color: rgb(255, 255, 200);
+    border-radius: 10px;
+}

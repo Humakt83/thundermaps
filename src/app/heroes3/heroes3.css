@@ -59,6 +59,10 @@
 }
 
 @media (max-width: 600px) {
+
+    .map {
+        width: 96%;
+    }
     
     .title {
         margin-left: 10px;
