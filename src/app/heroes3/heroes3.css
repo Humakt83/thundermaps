@@ -9,6 +9,11 @@
     min-height: 120px;
     background-image: url('../../assets/images/nav-background.jpg');
     color: rgb(255, 255, 200);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .minimap {
@@ -26,18 +31,6 @@
 .title {
     cursor: pointer;
     font-size: xx-large;
-    margin-left: 50px;
-}
-
-.year {
-    font-size: larger;
-    float: right;
-    margin-right: 50px;
-}
-
-.title,
-.year {
-    padding-top: 15px;
     font-weight: bold;
     display: inline-block;
 }
@@ -47,29 +40,15 @@
     width: 560px;
 }
 
-.mapSize {
-    float: right;
-    margin-right: 10px;
-    margin-top: 5px;
-}
-
-.mapSize img {
-    height: 26px;
-    border: 3px solid black;
-}
-
 @media (max-width: 600px) {
 
     .map {
         width: 96%;
+        flex-direction: column;
+        row-gap: 3px;
     }
     
     .title {
-        margin-left: 10px;
         font-size: larger;
-    }
-
-    .year {
-        font-size: smaller;
     }
 }

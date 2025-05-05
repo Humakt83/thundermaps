@@ -1,15 +1,14 @@
 <sub-title titleText="Heroes of Might & Magic 3" />
 <mapsort></mapsort>
 <div class="map" *ngFor="let map of maps | sortmaps: sort">
-    <div class="minimap" *ngFor="let minimap of map.minimaps; let id = index">
-        <modal #photo>
-            <img class="photo" [src]="'assets/images/heroes3/' + map.photos[id] + '.jpg'">
-        </modal>
-        <img class="minimapImage" [src]="'assets/images/heroes3/' + minimap + '.jpg'" [show-modal]="photo">
+    <div class="minimaps">
+        <div class="minimap" *ngFor="let minimap of map.minimaps; let id = index">
+            <modal #photo>
+                <img class="photo" [src]="'assets/images/heroes3/' + map.photos[id] + '.jpg'">
+            </modal>
+            <img class="minimapImage" [src]="'assets/images/heroes3/' + minimap + '.jpg'" [show-modal]="photo">
+        </div>
     </div>
     <div class="title"><a [href]="'assets/maps/heroes3/' + map.file" download>{{map.name}}</a></div>
-    <div class="mapSize">
-        <img [src]="mapSize.getImage(map.size)">
-    </div>
-    <div class="year">{{map.year}}</div>
+    <map-info [map]="map" />
 </div>

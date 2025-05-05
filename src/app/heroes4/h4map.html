@@ -1,21 +1,15 @@
-<modal #comments>
-        <h2>{{map.name}}</h2>
-        <img class="photo" [src]="'assets/images/heroes4/' + map.photos[0] + '.jpg'">
-        <p *ngFor="let comment of map.comments">{{comment}}</p>
-</modal>
-<div class="minimap" *ngFor="let minimap of map.minimaps; let id = index">
-    <modal #photo>
-        <img class="photo" [src]="'assets/images/heroes4/' + map.photos[id] + '.jpg'">
-    </modal>
-    <img class="minimapImage" [src]="'assets/images/heroes4/' + minimap + '.jpg'" [show-modal]="photo">
+<div class="map">
+    <div class="minimaps">
+        <div class="minimap" *ngFor="let minimap of map.minimaps; let id = index">
+            <modal #photo>
+                <img class="photo" [src]="'assets/images/heroes4/' + map.photos[id] + '.jpg'">
+            </modal>
+            <img class="minimapImage" [src]="'assets/images/heroes4/' + minimap + '.jpg'" [show-modal]="photo">
+        </div>
+    </div>
+    <div class="mapMain">
+        <div class="title"><a [href]="'assets/maps/heroes4/' + map.file" download>{{map.name}}</a></div>
+        <div class="description">{{map.description}}</div>
+    </div>
+    <map-info [map]="map" [mapComments]="map.comments"/>
 </div>
-<div class="title"><a [href]="'assets/maps/heroes4/' + map.file" download>{{map.name}}</a></div>
-<div class="commentButton" [show-modal]="comments" (mouseenter)="buttonPressed = true" (mouseleave)="buttonPressed = false" title="Author's comments">
-    <img *ngIf="!buttonPressed" src="assets/images/heroes4/Button.jpg">
-    <img *ngIf="buttonPressed" src="assets/images/heroes4/ButtonUp.jpg">
-</div>
-<div class="mapSize">
-    <img [src]="mapSize.getImage(map.size)">
-</div>
-<div class="year">{{map.year}}</div>    
-<div class="description">{{map.description}}</div>

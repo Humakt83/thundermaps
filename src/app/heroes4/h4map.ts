@@ -1,13 +1,6 @@
-import { MapSize } from '../map/mapsize';
+import { HeroesMap } from '../map/map';
 
-export type H4Map = {
-
-    name: string;
-    minimaps: string[];
-    photos: string[];
-    file: string;
-    size: MapSize;
-    year: number; 
+export type H4Map = HeroesMap & { 
     description: string; 
     comments: string[];
-}
+};

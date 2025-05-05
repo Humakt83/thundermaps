@@ -15,5 +15,4 @@ export class H4MapComponent {
 
     mapSize = MapSize;
     
-    buttonPressed = false;
 }

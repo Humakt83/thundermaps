@@ -1,3 +1,11 @@
+.map {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .description {
     font-weight: bolder;
     font-size: smaller;
@@ -13,6 +21,12 @@
     cursor: pointer;
     border: 2px ridge rgb(255, 255, 200);
     border-radius: 7px;
+}
+
+.mapMain {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
 }
 
 .title {
@@ -69,4 +83,21 @@
 
 p {
     font-size: smaller;
+}
+
+@media (max-width: 600px) {
+    
+    .title {
+        font-size: larger;
+    }
+
+    .map {
+        width: 96%;
+        flex-direction: column;
+        row-gap: 3px;
+    }
+
+    .mapMain {
+        max-width: 100%;
+    }
 }

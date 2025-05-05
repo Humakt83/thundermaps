@@ -20,6 +20,7 @@ import { Heroes5Component } from './heroes5/heroes5.component';
 import { H4MapComponent } from './heroes4/h4map.component';
 import { PairsModule } from 'ng2pairs';
 import { TitleComponent } from './title/title.component';
+import { MapInfoComponent } from './map/map-info.component';
 
 @NgModule({
     bootstrap: [ThundermapsComponent],
@@ -27,7 +28,7 @@ import { TitleComponent } from './title/title.component';
     providers: [MapService, SortService, provideHttpClient()],
     declarations: [ThundermapsComponent, HomeComponent, TitleComponent, SortComponent, 
         SortPipe, ModalComponent, ModalDirective, LinksComponent, Heroes3Component, 
-        Heroes4Component, Heroes5Component, H4MapComponent]
+        Heroes4Component, Heroes5Component, H4MapComponent, MapInfoComponent]
 })
 export class ThundermapsModule {
 

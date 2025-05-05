@@ -1,4 +1,4 @@
-.map {
+.maps {
     width: 85%;
     margin-left: auto;
     margin-right: auto;
@@ -9,11 +9,4 @@
     min-height: 120px;
     background-image: url('../../assets/images/nav-background.jpg');
     color: rgb(255, 255, 200);
-}
-
-@media (max-width: 600px) {
-
-    .map {
-        width: 96%;
-    }
 }

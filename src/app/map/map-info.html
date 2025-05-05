@@ -1,0 +1,16 @@
+<modal #comments>
+    <h2>{{map.name}}</h2>
+    <img class="photo" [src]="'assets/images/heroes4/' + map.photos[0] + '.jpg'">
+    <p *ngFor="let comment of mapComments">{{comment}}</p>
+</modal>
+
+<div class="mapInfo">
+    <div class="year">{{map.year}}</div>
+    <div class="mapSize">
+        <img [src]="mapSize.getImage(map.size)">
+    </div>
+    <div *ngIf="mapComments.length > 0" class="commentButton" [show-modal]="comments" (mouseenter)="commentButtonPressed = true" (mouseleave)="commentButtonPressed = false" title="Author's comments">
+        <img *ngIf="!commentButtonPressed" src="assets/images/heroes4/Button.jpg">
+        <img *ngIf="commentButtonPressed" src="assets/images/heroes4/ButtonUp.jpg">
+    </div>
+</div>
